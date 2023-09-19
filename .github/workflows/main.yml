@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Copypasta
         id: copypasta
-        uses: jasonmadigan/copy-issues-action@v1.0.9
+        uses: jasonmadigan/copy-issues-action@v1.0.10
         with:
           who-to-greet: 'Mona the Octocat'
           github_token: ${{ secrets.GITHUB_TOKEN }}
