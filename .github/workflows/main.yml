@@ -8,6 +8,6 @@ jobs:
     steps:
       - name: Copypasta
         id: copypasta
-        uses: jasonmadigan/copy-issues-action@v1.0.10
+        uses: jasonmadigan/copy-issues-action@v1.0.11
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
