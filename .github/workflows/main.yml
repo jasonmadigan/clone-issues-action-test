@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: Clone Issues
         id: clone-issues
-        uses: jasonmadigan/clone-issues-action@v1.0.11
+        uses: jasonmadigan/clone-issues-action@v1.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           labelToCopy: 'template-rc'
