@@ -2,6 +2,7 @@ on: [push]
 
 jobs:
   copy-issues:
+    permissions: write-all
     runs-on: ubuntu-latest
     name: A job to copy issues by label
     steps:
