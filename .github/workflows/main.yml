@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: jasonmadigan/copy-issues-action@v1.0.1
+        uses: jasonmadigan/copy-issues-action@v1.0.2
         with:
           who-to-greet: 'Mona the Octocat'
           github_token: ${{ secrets.GITHUB_TOKEN }}
