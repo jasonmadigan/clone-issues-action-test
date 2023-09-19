@@ -1,13 +1,15 @@
 on: [push]
 
 jobs:
-  copy-issues:
+  clone-issues:
     permissions: write-all
     runs-on: ubuntu-latest
     name: A job to copy issues by label
     steps:
-      - name: Copypasta
-        id: copypasta
-        uses: jasonmadigan/copy-issues-action@v1.0.11
+      - name: Clone Issues
+        id: clone-issues
+        uses: jasonmadigan/clone-issues-action@v1.0.12
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          labelToCopy: 'template-rc'
+          addLabel: 'duplicate'
