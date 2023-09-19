@@ -10,6 +10,7 @@ jobs:
         uses: jasonmadigan/copy-issues-action@v1.0.1
         with:
           who-to-greet: 'Mona the Octocat'
+          github_token: ${{ secrets.GITHUB_TOKEN }}
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
