@@ -5,9 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
-      - name: Hello world action step
-        id: hello
-        uses: jasonmadigan/copy-issues-action@v1.0.8
+      - name: Copypasta
+        id: copypasta
+        uses: jasonmadigan/copy-issues-action@v1.0.9
         with:
           who-to-greet: 'Mona the Octocat'
           github_token: ${{ secrets.GITHUB_TOKEN }}
